@@ -1,0 +1,42 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.button {
+ background-color:MediumSeaGreen;
+ color: white;
+ font-size: 19px;
+ padding: 13px 30px;
+ margin: 25px 10px;
+ border:none;
+ border-radius: 10px;
+ cursor:pointer;
+ box-shadow:5px 5px 5px #aaaaaa;
+}
+.button1 {
+ background-color:DodgerBlue;
+ color: white;
+ font-size: 19px;
+ padding: 13px 30px;
+ margin: 25px 10px;
+ border:none;
+ border-radius: 10px;
+ cursor:pointer;
+ box-shadow:5px 5px 5px #aaaaaa;
+ position:relative;
+ left:600px;
+}

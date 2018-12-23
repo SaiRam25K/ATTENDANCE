@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.button {
+ background-color:MediumSeaGreen;
+ color: white;
+ font-size: 19px;
+ padding: 13px 30px;
+ margin: 25px 10px;
+ border:none;
+ border-radius: 10px;
+ cursor:pointer;
+ box-shadow:5px 5px 5px #aaaaaa;
+}
+.button1 {
+ background-color:DodgerBlue;
+ color: white;
+ font-size: 19px;
+ padding: 13px 30px;
+ margin: 25px 10px;
+ border:none;
+ border-radius: 10px;
+ cursor:pointer;
+ box-shadow:5px 5px 5px #aaaaaa;
+ position:relative;
+ left:600px;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<input type="button" class="button" value="Present" onclick="AllPresent()">
+
+<table>
+  <tr>
+    <th>ROLL NO.</th>
+    <th>NAME</th>
+    <th>PRESENT</th>
+    </tr>
+  <tr>
+    <td>16071A0588</td>
+    <td>JOHN CENA</td>
+    <td>
+    <div class="radio">
+    <label><input type="radio" class="yes" >YES</label>
+    <label><input type="radio" class="no" >NO</label>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td>16071A0589</td>
+    <td>RANDY ORTON</td>
+    <td>
+    <div class="radio">
+    <label><input type="radio" class="yes" >YES</label>
+    <label><input type="radio" class="no" >NO</label>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td>16071A05B1</td>
+    <td>DWAYNE JOHNSON</td>
+    <td>
+    <div class="radio">
+    <label><input type="radio" class="yes"  >YES</label>
+    <label><input type="radio" class="no" >NO</label>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td>16071A0585</td>
+    <td>KANE</td>
+    <td>
+    <div class="radio">
+    <label><input type="radio" class="yes"  >YES</label>
+    <label><input type="radio" class="no"  >NO</label>
+    </div>
+    </td>
+  </tr>
+ 
+</table>
+<button class="button1">Submit</button>
+<script>
+function AllPresent()
+{
+  var x=document.querySelectorAll(".no");
+  var y=document.querySelectorAll(".yes");
+  var i;
+  for(i=0;i<x.length;i++)
+   {
+    if(x[i].checked==false)
+     y[i].checked=true;
+   }
+}
+</script>
+</body>
+</html>
